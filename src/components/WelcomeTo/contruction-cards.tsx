@@ -94,7 +94,7 @@ const ConstructionCards = () => {
         opacity: previousMovementsDone ? '0.3' : '1',
         gridArea: 'construction-cards',
         display: 'grid',
-        gridTemplateColumns: ['10% 39% 2% 39% 10%'],
+        gridTemplateColumns: ['10% 39% 2% 39% 10%','20% 29% 2% 29% 20%'],
         gridTemplateAreas: `'. doors . effects .'`,
       }}
       onClick={handleNextTurn}
@@ -205,12 +205,12 @@ const ConstructionCards = () => {
           <div
             sx={{
               display: 'grid',
-              width: '80%',
+              width: ['80%','60%'],
               justifySelf: 'center',
               borderRadius: '10px',
               alignSelf: 'center',
               border: `1px solid ${effect0.color}`,
-              paddingBottom: '80%',
+              paddingBottom: ['80%','60%'],
               position: 'relative',
               gridArea: 'effect1',
             }}
@@ -232,12 +232,12 @@ const ConstructionCards = () => {
           <div
             sx={{
               display: 'grid',
-              width: '80%',
+              width: ['80%','60%'],
               justifySelf: 'center',
               borderRadius: '10px',
               alignSelf: 'center',
               border: `1px solid ${effect1.color}`,
-              paddingBottom: '80%',
+              paddingBottom: ['80%','60%'],
               position: 'relative',
               gridArea: 'effect2',
             }}
@@ -259,12 +259,12 @@ const ConstructionCards = () => {
           <div
             sx={{
               display: 'grid',
-              width: '80%',
+              width: ['80%','60%'],
               justifySelf: 'center',
               borderRadius: '10px',
               alignSelf: 'center',
               border: `1px solid ${effect2.color}`,
-              paddingBottom: '80%',
+              paddingBottom: ['80%','60%'],
               position: 'relative',
               gridArea: 'effect3',
             }}

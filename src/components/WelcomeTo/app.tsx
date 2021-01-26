@@ -44,10 +44,14 @@ const App = () => {
   return (
     <div
       sx={{
+        width:'100%',
         display: 'grid',
         position: 'fixed',
-        gridTemplateColumns: ['100%', '30% 70%'],
-        gridTemplateRows: ['50px 20% 10% 50px auto', '10% 90%'],
+        gridTemplateColumns: ['100%','30% 50px auto', '30% 50px auto'],
+        gridTemplateRows: [
+          '50px 20% 10% 50px auto',
+          '10% 90%', 
+          '10% 90%'],
         gridTemplateAreas: [
           `
             'nav'
@@ -58,6 +62,12 @@ const App = () => {
           `,
           `
           'city-plans next-effects'
+          'city-plans actions'
+          'city-plans construction-cards'
+          `,
+          `
+          'city-plans next-effects'
+          'city-plans actions'
           'city-plans construction-cards'
         `,
         ],

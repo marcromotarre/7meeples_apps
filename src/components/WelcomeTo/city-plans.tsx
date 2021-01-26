@@ -12,7 +12,7 @@ import { useEffect } from 'react';
 const CityPlans = () => {
   const cityPlansCss = {
     width: '80%',
-    height: '90%',
+    height: ['90%','auto'],
     justifySelf: 'center',
     alignSelf: 'center',
   };
@@ -60,7 +60,9 @@ const CityPlans = () => {
       sx={{
         gridArea: 'city-plans',
         display: 'grid',
-        gridTemplateColumns: '33% 33% 33%',
+        backgroundColor: ['red', 'yellow', 'blue', 'green'],
+        gridTemplateColumns: ['33% 33% 33%','100%','100%'],
+        gridTemplateRows: ['100%','33% 33% 33%','33% 33% 33%'],
         flexWrap: 'wrap',
         justifyContent: 'space-around',
         alignItems: 'center',
