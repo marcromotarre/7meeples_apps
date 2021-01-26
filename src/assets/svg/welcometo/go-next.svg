@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="52" height="53" viewBox="0 0 52 53">
+  <g id="Grupo_453" data-name="Grupo 453" transform="translate(-374 -607)">
+    <g id="Rectángulo_139" data-name="Rectángulo 139" transform="translate(374 607)" fill="#fff" stroke="#000" stroke-width="1">
+      <path d="M0,0H42A10,10,0,0,1,52,10V43A10,10,0,0,1,42,53H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" stroke="none"/>
+      <path d="M1,.5H42A9.5,9.5,0,0,1,51.5,10V43A9.5,9.5,0,0,1,42,52.5H1A.5.5,0,0,1,.5,52V1A.5.5,0,0,1,1,.5Z" fill="none"/>
+    </g>
+    <path id="iconfinder_arrow-right-01_186409" d="M18.718,13.466,6.118.866a2.98,2.98,0,0,0-4.2,0L.867,1.917a2.978,2.978,0,0,0,0,4.2l9.614,9.617L.866,25.347a2.978,2.978,0,0,0,0,4.2L1.917,30.6a2.977,2.977,0,0,0,4.2,0L18.717,18a2.945,2.945,0,0,0,.85-2.265A2.943,2.943,0,0,0,18.718,13.466Z" transform="translate(390 618)" fill="#515151"/>
+  </g>
+</svg>

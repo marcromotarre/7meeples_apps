@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="221" height="555" viewBox="0 0 221 555">
+  <g id="Grupo_455" data-name="Grupo 455" transform="translate(-390 -718)">
+    <g id="Rectángulo_141" data-name="Rectángulo 141" transform="translate(390 718)" fill="#fff" stroke="#000" stroke-width="3" stroke-dasharray="20">
+      <rect width="221" height="555" rx="20" stroke="none"/>
+      <rect x="1.5" y="1.5" width="218" height="552" rx="18.5" fill="none"/>
+    </g>
+    <g id="Grupo_449" data-name="Grupo 449" transform="translate(0 0)">
+      <text id="CLICK_HERE_TO_SHUFFLE" data-name="CLICK
+HERE
+TO
+SHUFFLE" transform="translate(501 921)" font-size="54" font-family="Quicksand-Regular, Quicksand"><tspan x="-84.51" y="0">CLICK</tspan><tspan x="-68.58" y="63">HERE</tspan><tspan x="-38.961" y="126">TO</tspan><tspan font-size="45"><tspan x="-101.385" y="181">SHUFFLE</tspan></tspan></text>
+      <g id="icons" transform="translate(470.876 776)">
+        <path id="share" d="M57.423,21.433,38.866,4.563c-1.406-1.406-3.093,0-3.093,2.249v8.435c-13.215,0-24.462,8.154-29.8,19.119A43.033,43.033,0,0,0,2.033,45.894c-.562,2.812,3.655,4.218,5.342,1.687,6.186-9.841,16.589-16.308,28.4-16.308v9.279c0,2.249,1.687,3.655,3.093,2.249l18.557-16.87A3.421,3.421,0,0,0,57.423,21.433Z" transform="translate(0 0)"/>
+      </g>
+      <g id="icons-2" data-name="icons" transform="translate(472.358 1167.098)">
+        <path id="share-2" data-name="share" d="M57.423,31.469,38.866,48.339c-1.406,1.406-3.093,0-3.093-2.249V37.655c-13.215,0-24.462-8.154-29.8-19.119A43.033,43.033,0,0,1,2.033,7.008C1.471,4.2,5.688,2.79,7.375,5.321c6.186,9.841,16.589,16.308,28.4,16.308V12.35c0-2.249,1.687-3.655,3.093-2.249L57.423,26.97A3.421,3.421,0,0,1,57.423,31.469Z" transform="translate(-1.982 -4)"/>
+      </g>
+    </g>
+  </g>
+</svg>
