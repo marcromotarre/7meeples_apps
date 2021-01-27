@@ -137,16 +137,25 @@ const ConstructionCards = () => {
         }}
       >
         {!actualDoorCards[0] && (
-          <img
+          <div
             sx={{
-              height: "100%",
               width: "100%",
-              justifySelf: "center",
+              height: "90%",
+              border: `3px dashed black`,
               alignSelf: "center",
+              justifySelf: "center",
               gridArea: "click-shuffle",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              borderRadius: "15px",
             }}
-            src={clickHereToShuffle}
-          />
+          >
+            <img
+              sx={{ width: "80%", maxHeight: "90%" }}
+              src={clickHereToShuffle}
+            ></img>
+          </div>
         )}
         {actualDoorCards[0] && (
           <img
