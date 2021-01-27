@@ -215,7 +215,7 @@ const ConstructionCards = () => {
               gridArea: "effect1",
             }}
           >
-            <img sx={effectCss} src={effect1.image} alt={effect1.name} />
+            <img sx={effectCss} src={effect0.image} alt={effect0.name} />
           </div>
         )}
         {actualEffectCards[1] && (
