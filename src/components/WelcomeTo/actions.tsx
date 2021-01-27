@@ -28,7 +28,7 @@ const Actions = () => {
     <div
       sx={{
         width: "100%",
-        height: "40px",
+        height: "100%",
         gridArea: "actions",
         display: "flex",
         alignItems: "center",
@@ -38,8 +38,7 @@ const Actions = () => {
       <img
         onClick={handleGoPrevious}
         sx={{
-          height: "40px",
-          maxHeight: "80%",
+          maxHeight: "100%",
           maxWidth: "80%",
           opacity: canGoPrevious ? "1" : "0.3",
         }}
@@ -48,8 +47,7 @@ const Actions = () => {
       <img
         onClick={handleGoNext}
         sx={{
-          height: "40px",
-          maxHeight: "80%",
+          maxHeight: "100%",
           opacity: canGoNext ? "1" : "0.3",
         }}
         src={goNext}

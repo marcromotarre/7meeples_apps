@@ -31,20 +31,25 @@ const ConstructionCards = () => {
   const deck = useSelector((state) => state.deck);
   const [actualDoorCards, setActualDoorCards] = useState([]);
   const [actualEffectCards, setActualEffectCards] = useState([]);
-
-  const imageCss = {
+  const effectDiv = {
+    display: "grid",
+    height: "80px",
+    width: "80px",
+    paddingLft: "100%",
+    justifySelf: "center",
+    borderRadius: "10px",
+    alignSelf: "center",
+  };
+  const effectCss = {
+    width: "90%",
+    justifySelf: "center",
+    alignSelf: "center",
+  };
+  const doorCss = {
     width: "50%",
     justifySelf: "center",
     alignSelf: "center",
-  }; /*
-  
-  {
-                position: "absolute",
-                justifySelf: "center",
-                alignSelf: "center",
-                alignItems: "center",
-                width: "80%",
-              }*/
+  };
 
   useEffect(() => {
     const actualDoorCards = deck.map((subDeck) =>
@@ -145,21 +150,21 @@ const ConstructionCards = () => {
         )}
         {actualDoorCards[0] && (
           <img
-            sx={{ ...imageCss, gridArea: "door1" }}
+            sx={{ ...doorCss, gridArea: "door1" }}
             src={doors[parseInt(actualDoorCards[0]) - 1]}
             alt={actualDoorCards[1]}
           />
         )}
         {actualDoorCards[1] && (
           <img
-            sx={{ ...imageCss, gridArea: "door2" }}
+            sx={{ ...doorCss, gridArea: "door2" }}
             src={doors[parseInt(actualDoorCards[1]) - 1]}
             alt={actualDoorCards[1]}
           />
         )}
         {actualDoorCards[2] && (
           <img
-            sx={{ ...imageCss, gridArea: "door3" }}
+            sx={{ ...doorCss, gridArea: "door3" }}
             src={doors[parseInt(actualDoorCards[2]) - 1]}
             alt={actualDoorCards[2]}
           />
@@ -185,66 +190,54 @@ const ConstructionCards = () => {
         }}
       >
         {!actualEffectCards[0] && (
-          <img
+          <div
             sx={{
-              height: "10%",
-              width: "10%",
-              justifySelf: "center",
+              width: "100%",
+              height: "90%",
+              border: `3px dashed black`,
               alignSelf: "center",
+              justifySelf: "center",
               gridArea: "click-next",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              borderRadius: "15px",
             }}
-            src={clickHere}
-          />
+          >
+            <img sx={{ width: "80%", maxHeight: "90%" }} src={clickHere}></img>
+          </div>
         )}
         {actualEffectCards[0] && (
           <div
             sx={{
-              display: "grid",
-              width: ["60%", "60%"],
-              height: ["60%", "60%"],
-              justifySelf: "center",
-              borderRadius: "10px",
-              alignSelf: "center",
+              ...effectDiv,
               border: `1px solid ${effect0.color}`,
-              position: "relative",
               gridArea: "effect1",
             }}
           >
-            <img sx={imageCss} src={effect0.image} alt={effect0.name} />
+            <img sx={effectCss} src={effect1.image} alt={effect1.name} />
           </div>
         )}
         {actualEffectCards[1] && (
           <div
             sx={{
-              display: "grid",
-              width: ["60%", "60%"],
-              height: ["60%", "60%"],
-              justifySelf: "center",
-              borderRadius: "10px",
-              alignSelf: "center",
+              ...effectDiv,
               border: `1px solid ${effect1.color}`,
-              position: "relative",
               gridArea: "effect2",
             }}
           >
-            <img sx={imageCss} src={effect1.image} alt={effect1.name} />
+            <img sx={effectCss} src={effect1.image} alt={effect1.name} />
           </div>
         )}
         {actualEffectCards[2] && (
           <div
             sx={{
-              display: "grid",
-              width: ["60%", "60%"],
-              height: ["60%", "60%"],
-              justifySelf: "center",
-              borderRadius: "10px",
-              alignSelf: "center",
+              ...effectDiv,
               border: `1px solid ${effect2.color}`,
-              position: "relative",
               gridArea: "effect3",
             }}
           >
-            <img sx={imageCss} src={effect2.image} alt={effect2.name} />
+            <img sx={effectCss} src={effect2.image} alt={effect2.name} />
           </div>
         )}
       </div>
