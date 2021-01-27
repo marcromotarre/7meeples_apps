@@ -53,7 +53,7 @@ const App = () => {
           "100px 100px 5% auto",
           "100px 100px 5% auto",
         ],
-        backgroundColor: ["red", "green", "blue", "yellow", "brown", "black"],
+        //backgroundColor: ["red", "green", "blue", "yellow", "brown", "black"],
         gridTemplateAreas: [
           `
             'nav'
