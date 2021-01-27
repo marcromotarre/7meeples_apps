@@ -50,8 +50,9 @@ const App = () => {
         gridTemplateColumns: ['100%','30% 50px auto', '30% 50px auto'],
         gridTemplateRows: [
           '50px 20% 10% 50px auto',
-          '10% 90%', 
-          '10% 90%'],
+          '100px 100px 50px auto', 
+          '100px 100px 50px auto', 
+          ],
         gridTemplateAreas: [
           `
             'nav'
@@ -61,14 +62,16 @@ const App = () => {
             'construction-cards'
           `,
           `
-          'city-plans next-effects'
-          'city-plans actions'
-          'city-plans construction-cards'
+          'nav nav nav'
+          'city-plans next-effects next-effects'
+          'city-plans actions actions'
+          'city-plans construction-cards construction-cards'
           `,
           `
-          'city-plans next-effects'
-          'city-plans actions'
-          'city-plans construction-cards'
+          'nav nav nav'
+          'city-plans next-effects next-effects'
+          'city-plans actions actions'
+          'city-plans construction-cards construction-cards'
         `,
         ],
       }}

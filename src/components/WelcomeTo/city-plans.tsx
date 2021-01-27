@@ -60,7 +60,6 @@ const CityPlans = () => {
       sx={{
         gridArea: 'city-plans',
         display: 'grid',
-        backgroundColor: ['red', 'yellow', 'blue', 'green'],
         gridTemplateColumns: ['33% 33% 33%','100%','100%'],
         gridTemplateRows: ['100%','33% 33% 33%','33% 33% 33%'],
         flexWrap: 'wrap',
