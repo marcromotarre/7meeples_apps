@@ -1,93 +1,109 @@
 /** @jsx jsx */
-import { jsx } from 'theme-ui';
-import logoRed from '../assets/svg/logo-red.svg';
-import siguenosEnInstagram from '../assets/svg/siguenos-en-instagram.svg';
+import { jsx } from "theme-ui";
+import logoRed from "../assets/svg/logo-red.svg";
+import siguenosEnInstagram from "../assets/svg/siguenos-en-instagram.svg";
 
-import { effects } from '../../data/effects';
-import { useSelector } from 'react-redux';
-import { couldStartTrivia } from 'typescript';
-import { useEffect, useState } from 'react';
+import { effects } from "../../data/effects";
+import { useSelector } from "react-redux";
+import { couldStartTrivia } from "typescript";
+import { useEffect, useState } from "react";
 
 const NextEffects = () => {
   const deck = useSelector((state) => state.deck);
   const [nextEffects, setNextEffects] = useState([]);
   const previousMovementsDone = useSelector(
-    (state) => state.previousMovementsDone,
+    (state) => state.previousMovementsDone
   );
   useEffect(() => {
     const nextEffects = deck.map((deckPile) =>
-      deckPile[0] ? deckPile[0].effect : undefined,
+      deckPile[0] ? deckPile[0].effect : undefined
     );
     setNextEffects(nextEffects);
   }, [deck]);
 
-  const nextEffect0 = effects.find(
-    (symbol) => symbol.name === nextEffects[0],
-  );
+  const nextEffect0 = effects.find((symbol) => symbol.name === nextEffects[0]);
 
-  const nextEffect1 = effects.find(
-    (symbol) => symbol.name === nextEffects[1],
-  );
+  const nextEffect1 = effects.find((symbol) => symbol.name === nextEffects[1]);
 
-  const nextEffect2 = effects.find(
-    (symbol) => symbol.name === nextEffects[2],
-  );
+  const nextEffect2 = effects.find((symbol) => symbol.name === nextEffects[2]);
+  const imageCss = {
+    display: "block",
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    maxHeight: "80%",
+    maxWidth: "80%",
+    transform: "translate(-50%, -50%)",
+  };
 
+  const effectDiv = {
+    width: "100%",
+    height: "100%",
+    maxWidth: "80%",
+    maxHeight: "80%",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+  };
+
+  const effectImage = {
+    height: "50%",
+    justifySelf: "center",
+    alignSelf: "center",
+    maxWidth: "80%",
+    maxHeight: "80%",
+  };
   return (
     <div
       className="next-effects"
       sx={{
-        opacity: previousMovementsDone ? '0.3' : '1',
-        gridArea: 'next-effects',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
+        opacity: previousMovementsDone ? "0.3" : "1",
+        gridArea: "next-effects",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
       }}
     >
       <div
         sx={{
-          display: 'grid',
-          gridTemplateColumns: '33% 33% 33%',
-          alignItems: 'center',
-          justifyContent: 'space-around',
-          width: '90%',
-          height: '80%',
-          border: '1px solid #707070',
-          borderRadius: '10px',
+          display: "grid",
+          gridTemplateColumns: "33% 33% 33%",
+          gridTemplateRows: "100%",
+          gridTemplateAreas: `'next-effect-1 next-effect-2 next-effect-3'`,
+          alignItems: "center",
+          justifyContent: "space-around",
+          width: "90%",
+          height: "80%",
+          border: "1px solid #707070",
+          borderRadius: "10px",
         }}
       >
         {nextEffect0 && (
-          <img
-            sx={{
-              height: '50%',
-              justifySelf: 'center',
-              alignSelf: 'center',
-            }}
-            src={nextEffect0.image}
-            alt={nextEffect0.name}
-          />
+          <div sx={{ ...effectDiv, gridArea: "next-effect-1" }}>
+            <img
+              sx={effectImage}
+              src={nextEffect0.image}
+              alt={nextEffect0.name}
+            />
+          </div>
         )}
         {nextEffect1 && (
-          <img
-            sx={{
-              height: '50%',
-              justifySelf: 'center',
-              alignSelf: 'center',
-            }}
-            src={nextEffect1.image}
-            alt={nextEffect1.name}
-          />
+          <div sx={{ ...effectDiv, gridArea: "next-effect-2" }}>
+            <img
+              sx={effectImage}
+              src={nextEffect1.image}
+              alt={nextEffect1.name}
+            />
+          </div>
         )}
         {nextEffect2 && (
-          <img
-            sx={{
-              height: '50%',
-              justifySelf: 'center',
-              alignSelf: 'center',
-            }}
-            src={nextEffect2.image}
-            alt={nextEffect2.name}
-          />
+          <div sx={{ ...effectDiv, gridArea: "next-effect-3" }}>
+            <img
+              sx={effectImage}
+              src={nextEffect2.image}
+              alt={nextEffect2.name}
+            />
+          </div>
         )}
       </div>
     </div>
