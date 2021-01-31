@@ -1,20 +1,19 @@
 /** @jsx jsx */
-import { jsx } from 'theme-ui';
-import { useSelector, useDispatch } from 'react-redux';
-import { cityPlans as cityPlanCards } from '../../data/city-plans';
+import { jsx } from "theme-ui";
+import { useSelector, useDispatch } from "react-redux";
 
 import {
   setCityPlans as setCityPlansAction,
   changeCityPlanState as changeCityPlanStateAction,
-} from '../../actions';
-import { useEffect } from 'react';
+} from "../../actions";
+import { useEffect } from "react";
 
-const CityPlans = () => {
+const CityPlans = ({ cityPlanCards }) => {
   const cityPlansCss = {
-    width: '80%',
-    height: ['90%','auto'],
-    justifySelf: 'center',
-    alignSelf: 'center',
+    width: "80%",
+    height: ["90%", "auto"],
+    justifySelf: "center",
+    alignSelf: "center",
   };
 
   useEffect(() => {
@@ -44,27 +43,21 @@ const CityPlans = () => {
     dispatch(changeCityPlanStateAction({ level }));
   };
 
-  const cityPlanLevel1 = cityPlans.find(
-    (cityPlan) => cityPlan.level === 1,
-  );
-  const cityPlanLevel2 = cityPlans.find(
-    (cityPlan) => cityPlan.level === 2,
-  );
-  const cityPlanLevel3 = cityPlans.find(
-    (cityPlan) => cityPlan.level === 3,
-  );
+  const cityPlanLevel1 = cityPlans.find((cityPlan) => cityPlan.level === 1);
+  const cityPlanLevel2 = cityPlans.find((cityPlan) => cityPlan.level === 2);
+  const cityPlanLevel3 = cityPlans.find((cityPlan) => cityPlan.level === 3);
 
   return (
     <div
       className="city-plans"
       sx={{
-        gridArea: 'city-plans',
-        display: 'grid',
-        gridTemplateColumns: ['33% 33% 33%','100%','100%'],
-        gridTemplateRows: ['100%','33% 33% 33%','33% 33% 33%'],
-        flexWrap: 'wrap',
-        justifyContent: 'space-around',
-        alignItems: 'center',
+        gridArea: "city-plans",
+        display: "grid",
+        gridTemplateColumns: ["33% 33% 33%", "100%", "100%"],
+        gridTemplateRows: ["100%", "33% 33% 33%", "33% 33% 33%"],
+        flexWrap: "wrap",
+        justifyContent: "space-around",
+        alignItems: "center",
       }}
     >
       {cityPlanLevel1 && (

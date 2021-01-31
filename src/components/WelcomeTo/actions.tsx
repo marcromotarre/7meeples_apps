@@ -1,9 +1,8 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui";
 import { useSelector, useDispatch } from "react-redux";
-import goPrevious from "../../assets/svg/welcometo/go-previous.svg";
-import goNext from "../../assets/svg/welcometo/go-next.svg";
-import { useEffect } from "react";
+import goPrevious from "../../assets/svg/welcome-to/go-previous.svg";
+import goNext from "../../assets/svg/welcome-to/go-next.svg";
 import {
   goPrevious as goPreviousAction,
   nextTurn as goNextAction,

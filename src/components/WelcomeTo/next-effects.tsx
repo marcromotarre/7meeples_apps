@@ -1,14 +1,9 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui";
-import logoRed from "../assets/svg/logo-red.svg";
-import siguenosEnInstagram from "../assets/svg/siguenos-en-instagram.svg";
-
-import { effects } from "../../data/effects";
 import { useSelector } from "react-redux";
-import { couldStartTrivia } from "typescript";
 import { useEffect, useState } from "react";
 
-const NextEffects = () => {
+const NextEffects = ({ effects }) => {
   const deck = useSelector((state) => state.deck);
   const [nextEffects, setNextEffects] = useState([]);
   const previousMovementsDone = useSelector(

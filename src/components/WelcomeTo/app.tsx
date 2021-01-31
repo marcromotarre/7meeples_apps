@@ -1,29 +1,18 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui";
 
-import NextEffects from "./next-effects.tsx";
-import CityPlans from "./city-plans.tsx";
-import ConstructionCards from "./contruction-cards.tsx";
-import Actions from "./actions.tsx";
+import NextEffects from "./next-effects";
+import CityPlans from "./city-plans";
+import ConstructionCards from "./contruction-cards";
+import Actions from "./actions";
 
 import Nav from "../nav";
 
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 
-import {
-  resetDeck,
-  nextTurn as nextTurnAction,
-  reshuffleDeck as reshuffleDeckAction,
-  goPrevious as goPreviousAction,
-  goEnd as goEndAction,
-  cancelReset as cancelResetAction,
-  addEmptyCardToDiscardDeck as addEmptyCardToDiscardDeckAction,
-} from "../../actions";
-import { cards } from "../../data/deck";
-import { cityPlans as cityPlanCards } from "../../data/city-plans";
-import { useEffect } from "react";
+import { resetDeck } from "../../actions";
 
-const App = () => {
+const App = ({ cards, cityPlanCards, doors, effects }) => {
   const dispatch = useDispatch();
 
   const shuffledCards = cards
@@ -78,10 +67,14 @@ const App = () => {
       }}
     >
       <Nav />
-      <CityPlans></CityPlans>
-      <NextEffects></NextEffects>
+      <CityPlans cityPlanCards={cityPlanCards}></CityPlans>
+      <NextEffects effects={effects}></NextEffects>
       <Actions></Actions>
-      <ConstructionCards></ConstructionCards>
+      <ConstructionCards
+        cards={cards}
+        effects={effects}
+        doors={doors}
+      ></ConstructionCards>
     </div>
   );
 };

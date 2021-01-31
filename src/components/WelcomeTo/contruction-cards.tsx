@@ -1,32 +1,16 @@
 /** @jsx jsx */
-import { jsx, Grid, Flex } from "theme-ui";
-import logoRed from "../assets/svg/logo-red.svg";
-import siguenosEnInstagram from "../assets/svg/siguenos-en-instagram.svg";
-import { cards } from "../../data/deck";
-
-import { effects } from "../../data/effects";
-import { doors } from "../../data/doors";
-import goPrevious from "../../assets/svg/welcometo/go-previous.svg";
-import clickHere from "../../assets/svg/welcometo/click-here-to-flip.svg";
-import clickHereToShuffle from "../../assets/svg/welcometo/click-here-to-shuffle.svg";
-import goNext from "../../assets/svg/welcometo/go-next.svg";
-
-import door1 from "../../assets/svg/welcometo/doors/door-1.svg";
-import door13 from "../../assets/svg/welcometo/doors/door-13.svg";
-import door8 from "../../assets/svg/welcometo/doors/door-8.svg";
+import { jsx } from "theme-ui";
+import clickHere from "../../assets/svg/welcome-to/click-here-to-flip.svg";
+import clickHereToShuffle from "../../assets/svg/welcome-to/click-here-to-shuffle.svg";
 import { useSelector, useDispatch } from "react-redux";
 
 import {
   nextTurn as nextTurnAction,
   reshuffleDeck as reshuffleDeckAction,
-  goPrevious as goPreviousAction,
-  goEnd as goEndAction,
-  cancelReset as cancelResetAction,
-  addEmptyCardToDiscardDeck as addEmptyCardToDiscardDeckAction,
 } from "../../actions";
 import { useEffect, useState } from "react";
 
-const ConstructionCards = () => {
+const ConstructionCards = ({ cards, effects, doors }) => {
   const dispatch = useDispatch();
   const deck = useSelector((state) => state.deck);
   const [actualDoorCards, setActualDoorCards] = useState([]);
