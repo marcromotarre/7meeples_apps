@@ -5,7 +5,6 @@ div#__next,
 div#__next > div,
 div#__next > div > div {
   height: 100%;
-  align-items: stretch;
 }
 
 body {
@@ -13,6 +12,14 @@ body {
   min-height: 100vh;
   /* mobile viewport bug fix */
   min-height: -webkit-fill-available;
+  font-family: Quicksand;
+}
+
+h1 {
+  font-family: Quicksand;
+}
+
+span {
   font-family: Quicksand;
 }
 
@@ -25,10 +32,10 @@ html {
 }
 
 @font-face {
-  font-family: 'Quicksand';
+  font-family: "Quicksand";
   font-style: regular;
   font-weight: 400;
   font-display: swap;
-  src: local('Quicksand'),
-    url(/fonts/Quicksand/static/Quicksand-Regular.ttf) format('ttf');
+  src: local("Quicksand"),
+    url(/fonts/Quicksand/static/Quicksand-Regular.ttf) format("ttf");
 }
