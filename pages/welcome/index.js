@@ -7,7 +7,7 @@ import Nav from "src/components/nav";
 import Link from "next/link";
 
 export default () => {
-  const imageStyle = {
+  const aaa = {
     borderRadius: "10px",
     width: "60%",
     height: "auto",
@@ -52,10 +52,10 @@ export default () => {
         }}
       >
         <Link href="./welcometoyourperfecthome">
-          <img sx={imageStyle} src={yourPerfectHome}></img>
+          <img sx={aaa} src={yourPerfectHome}></img>
         </Link>
         <Link href="./welcometonewlasvegas">
-          <img sx={imageStyle} src={newLasVegas}></img>
+          <img sx={aaa} src={newLasVegas}></img>
         </Link>
       </div>
     </div>

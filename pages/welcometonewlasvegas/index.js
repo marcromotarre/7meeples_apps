@@ -1,8 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "../../src/components/WelcomeTo/app";
-import store from "../../src/app/store";
-import { Provider } from "react-redux";
 
 import { cards } from "../../src/data/welcome-to/new-las-vegas/deck";
 import { casinos } from "../../src/data/welcome-to/new-las-vegas/casinos";
@@ -11,13 +9,11 @@ import { cityPlans as cityPlanCards } from "../../src/data/welcome-to/your-perfe
 
 export default () => {
   return (
-    <Provider store={store}>
-      <App
-        cards={cards}
-        cityPlanCards={cityPlanCards}
-        doors={casinos}
-        effects={effects}
-      />
-    </Provider>
+    <App
+      cards={cards}
+      cityPlanCards={cityPlanCards}
+      doors={casinos}
+      effects={effects}
+    />
   );
 };

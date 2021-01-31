@@ -8,7 +8,6 @@ import {
   nextTurn as goNextAction,
 } from "../../actions";
 const Actions = () => {
-  const deck = useSelector((state) => state.deck);
   const discardDeck = useSelector((state) => state.discardDeck);
   const dispatch = useDispatch();
   const canGoPrevious = discardDeck[0].length > 0;
