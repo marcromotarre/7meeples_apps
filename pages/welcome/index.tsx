@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui";
+
 import yourPerfectHome from "../../src/assets/images/welcome-to/welcome-to-your-perfect-home.jpg";
 import newLasVegas from "../../src/assets/images/welcome-to/welcome-to-new-las-vegas.jpg";
 import Nav from "src/components/nav";
