@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="490.42" height="519.416" viewBox="0 0 490.42 519.416">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="Elipse_56" data-name="Elipse 56" cx="223" cy="223" r="223" transform="translate(2678 5099)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Grupo_486" data-name="Grupo 486" transform="translate(-2678 -5099)">
+    <g id="Elipse_55" data-name="Elipse 55" transform="translate(2678 5099)" fill="#af8de5" stroke="#707070" stroke-width="1">
+      <circle cx="223" cy="223" r="223" stroke="none"/>
+      <circle cx="223" cy="223" r="222.5" fill="none"/>
+    </g>
+    <path id="Shape" d="M343.89,16.376h-65.5L180.133,114.63l32.751,32.751L343.89,16.376Z" transform="matrix(-0.588, -0.809, 0.809, -0.588, 2903.456, 5618.416)" fill="#ffd900" fill-rule="evenodd"/>
+    <g id="Enmascarar_grupo_1" data-name="Enmascarar grupo 1" clip-path="url(#clip-path)">
+      <path id="Trazado_485" data-name="Trazado 485" d="M2641.85,5457.545s401.664-194.364,450.6-371.521,100.623,70.084,100.623,70.084-477.914,348.452-551.226,362.253S2641.85,5457.545,2641.85,5457.545Z" fill="#ff3d4a"/>
+    </g>
+    <g id="Page-1" transform="matrix(-0.588, -0.809, 0.809, -0.588, 2903.75, 5618.82)">
+      <g id="Core" transform="translate(0.5)">
+        <g id="content-cut" transform="translate(0)">
+          <path id="Shape-2" data-name="Shape" d="M131.006,65.5a65.5,65.5,0,1,0-65.5,65.5c9.825,0,18.013-1.638,26.2-6.55l39.3,39.3-39.3,39.3c-8.188-4.913-16.376-6.55-26.2-6.55a65.5,65.5,0,1,0,65.5,65.5c0-9.825-1.638-18.013-6.55-26.2l39.3-39.3,114.63,114.63h65.5L124.455,91.7c4.913-8.188,6.55-16.376,6.55-26.2ZM65.5,98.254A32.751,32.751,0,1,1,98.254,65.5,32.848,32.848,0,0,1,65.5,98.254Zm0,196.508a32.751,32.751,0,1,1,32.751-32.751A32.848,32.848,0,0,1,65.5,294.763Zm98.254-139.193c4.913,0,8.188,3.275,8.188,8.188s-3.275,8.188-8.188,8.188-8.188-3.275-8.188-8.188,3.275-8.188,8.188-8.188ZM343.89,16.376Z" transform="translate(0 0)" fill="#ffd900" fill-rule="evenodd"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

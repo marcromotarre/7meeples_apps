@@ -21,15 +21,6 @@ const NextEffects = ({ effects }) => {
   const nextEffect1 = effects.find((symbol) => symbol.name === nextEffects[1]);
 
   const nextEffect2 = effects.find((symbol) => symbol.name === nextEffects[2]);
-  const imageCss = {
-    display: "block",
-    position: "absolute",
-    top: "50%",
-    left: "50%",
-    maxHeight: "80%",
-    maxWidth: "80%",
-    transform: "translate(-50%, -50%)",
-  };
 
   const effectDiv = {
     width: "100%",
@@ -42,11 +33,11 @@ const NextEffects = ({ effects }) => {
   };
 
   const effectImage = {
-    height: "50%",
+    height: "65%",
     justifySelf: "center",
     alignSelf: "center",
-    maxWidth: "80%",
-    maxHeight: "80%",
+    maxWidth: "100%",
+    maxHeight: "100%",
   };
   return (
     <div
