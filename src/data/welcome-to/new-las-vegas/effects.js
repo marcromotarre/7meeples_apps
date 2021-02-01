@@ -2,7 +2,7 @@ import construction from "../../../assets/svg/welcome-to/new-las-vegas/effects/c
 import inauguration from "../../../assets/svg/welcome-to/new-las-vegas/effects/inauguration.svg";
 import limousine from "../../../assets/svg/welcome-to/new-las-vegas/effects/limousine.svg";
 import show from "../../../assets/svg/welcome-to/new-las-vegas/effects/show.svg";
-import improvement from "../../../assets/svg/welcome-to/new-las-vegas/effects/show.svg";
+import improvement from "../../../assets/svg/welcome-to/new-las-vegas/effects/improvement.svg";
 
 export const effects = [
   {
