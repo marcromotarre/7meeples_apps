@@ -25,31 +25,83 @@ const Actions = () => {
   return (
     <div
       sx={{
-        width: "100%",
-        height: "100%",
+        display: "grid",
         gridArea: "actions",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
+        gridTemplateColumns: "5px 60px auto 60px 5px",
+        gridTemplateRows: "100%",
+        gridTemplateAreas: `
+            '. information movements left .'
+          `,
       }}
     >
-      <img
-        onClick={handleGoPrevious}
+      <div
         sx={{
-          maxHeight: "100%",
-          maxWidth: "80%",
-          opacity: canGoPrevious ? "1" : "0.3",
+          gridArea: "information",
+          width: "100%",
+          height: "100%",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
         }}
-        src={goPrevious}
-      />
-      <img
-        onClick={handleGoNext}
+      >
+        <img
+          onClick={handleGoPrevious}
+          sx={{
+            maxHeight: "100%",
+            maxWidth: "80%",
+            opacity: canGoPrevious ? "1" : "0.3",
+          }}
+          src={goPrevious}
+        />
+      </div>
+      <div
         sx={{
-          maxHeight: "100%",
-          opacity: canGoNext ? "1" : "0.3",
+          gridArea: "movements",
+          width: "100%",
+          height: "100%",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
         }}
-        src={goNext}
-      />
+      >
+        <img
+          onClick={handleGoPrevious}
+          sx={{
+            maxHeight: "100%",
+            maxWidth: "80%",
+            opacity: canGoPrevious ? "1" : "0.3",
+          }}
+          src={goPrevious}
+        />
+        <img
+          onClick={handleGoNext}
+          sx={{
+            maxHeight: "100%",
+            opacity: canGoNext ? "1" : "0.3",
+          }}
+          src={goNext}
+        />
+      </div>
+      <div
+        sx={{
+          gridArea: "left",
+          width: "100%",
+          height: "100%",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <img
+          onClick={handleGoPrevious}
+          sx={{
+            maxHeight: "100%",
+            maxWidth: "80%",
+            opacity: canGoPrevious ? "1" : "0.3",
+          }}
+          src={goPrevious}
+        />
+      </div>
     </div>
   );
 };

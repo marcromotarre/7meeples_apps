@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="113" height="56" viewBox="0 0 113 56">
+  <g id="pool_left_4" transform="translate(-2058 -3593)">
+    <g id="Grupo_442" data-name="Grupo 442" transform="translate(1016 2773)">
+      <g id="Rectángulo_82" data-name="Rectángulo 82" transform="translate(1042 820)" fill="none" stroke="#8dd1e4" stroke-width="1">
+        <rect width="113" height="56" rx="5" stroke="none"/>
+        <rect x="0.5" y="0.5" width="112" height="55" rx="4.5" fill="none"/>
+      </g>
+      <g id="Grupo_443" data-name="Grupo 443" transform="translate(1.543 2)">
+        <text id="_4" data-name="4" transform="translate(1146 859)" fill="#8dd1e4" font-size="35" font-family="Quicksand" font-weight="700"><tspan x="-24.78" y="0">4</tspan></text>
+        <g id="Grupo_444" data-name="Grupo 444" transform="translate(827.462 1306.035)">
+          <path id="Trazado_7" data-name="Trazado 7" d="M218.334-394.465l-6.339-25.569L256.4-406.768l-6.079,11.682Z" transform="translate(9 -54)" fill="#8dd1e4"/>
+          <g id="Grupo_5" data-name="Grupo 5" transform="translate(239.661 -459.647)">
+            <ellipse id="Elipse_10" data-name="Elipse 10" cx="14.5" cy="5" rx="14.5" ry="5" transform="translate(0.334 2.874)" fill="#388caf"/>
+            <ellipse id="Elipse_11" data-name="Elipse 11" cx="14.5" cy="4.5" rx="14.5" ry="4.5" transform="translate(0.334 3.874)" fill="#5abce6"/>
+            <g id="Elipse_12" data-name="Elipse 12" transform="translate(0.334 2.874)" fill="none" stroke="#b4d6c8" stroke-width="0.4">
+              <ellipse cx="14.5" cy="5" rx="14.5" ry="5" stroke="none"/>
+              <ellipse cx="14.5" cy="5" rx="14.3" ry="4.8" fill="none"/>
+            </g>
+            <path id="Trazado_4" data-name="Trazado 4" d="M249.153-384.064v-9.64" transform="translate(-243.074 395.542)" fill="none" stroke="#75c3e4" stroke-width="0.4"/>
+            <line id="Línea_2" data-name="Línea 2" x2="4.313" transform="translate(6.293 8.496)" fill="none" stroke="#75c3e4" stroke-width="0.4"/>
+            <line id="Línea_3" data-name="Línea 3" y1="9.235" transform="translate(10.606 1.963)" fill="none" stroke="#75c3e4" stroke-width="0.4"/>
+            <line id="Línea_4" data-name="Línea 4" x2="4.313" transform="translate(6.293 5.919)" fill="none" stroke="#75c3e4" stroke-width="0.4"/>
+            <line id="Línea_5" data-name="Línea 5" y1="3.081" transform="translate(3.212 1.963)" fill="none" stroke="#388caf" stroke-width="0.4"/>
+            <line id="Línea_6" data-name="Línea 6" y1="3.081" transform="translate(7.525 1.347)" fill="none" stroke="#388caf" stroke-width="0.4"/>
+            <path id="Trazado_5" data-name="Trazado 5" d="M244.508-394.417v.078l.048-.6a1.515,1.515,0,0,1,1.368-.743,1.4,1.4,0,0,1,1.447,1.347" transform="translate(-241.291 396.302)" fill="none" stroke="#75c3e4" stroke-width="0.4"/>
+            <path id="Trazado_6" data-name="Trazado 6" d="M244.5-394.465v.122a.844.844,0,0,1,.094-.5,1.516,1.516,0,0,1,1.354-.841,1.748,1.748,0,0,1,1.611,1.725c.019.039.039.642.039.642" transform="translate(-236.97 395.686)" fill="none" stroke="#75c3e4" stroke-width="0.4"/>
+          </g>
+          <g id="Grupo_14" data-name="Grupo 14" transform="translate(229.736 -466.162)">
+            <path id="Unión_2" data-name="Unión 2" d="M11.883,17.237H4.329a4.616,4.616,0,0,1,3.2-1.213L6.838,6.171a3.243,3.243,0,0,0-3.162.8c0,.013,0,.025,0,.037l-.021-.015-.022.029L3.632,6.97a2.816,2.816,0,0,0-3.626.716C-.156,4.06,2.768.806,6.834.017L6.865,0,6.9.012C10.9-.06,14.438,2.39,15.1,5.846a2.745,2.745,0,0,0-3.635.16c0,.017,0,.035.006.052a3.561,3.561,0,0,0-3.993.38L8.144,16c1.679.007,3.179.5,3.739,1.231h0ZM7.474,6.426c0-.008,0-.012,0-.013Z" transform="translate(0.718 0.792)" fill="none" stroke="#b4d6c8" stroke-width="0.4"/>
+            <rect id="Rectángulo_19" data-name="Rectángulo 19" width="0.616" height="11.092" transform="matrix(0.998, -0.07, 0.07, 0.998, 7.514, 6.356)" fill="#85afbe"/>
+            <path id="Sustracción_1" data-name="Sustracción 1" d="M7.555,1.232H0C.565.495,2.083,0,3.778,0S6.989.495,7.554,1.231Z" transform="translate(5.046 16.797)" fill="#3289ad"/>
+            <g id="Grupo_12" data-name="Grupo 12" transform="matrix(0.995, -0.105, 0.105, 0.995, 0, 1.589)">
+              <path id="Trazado_28" data-name="Trazado 28" d="M7.64,0C3.492.34.219,3.28,0,6.919a2.805,2.805,0,0,1,3.725-.294A7.157,7.157,0,0,1,7.64,0Z" transform="translate(0 0.01)" fill="#388caf"/>
+              <path id="Trazado_29" data-name="Trazado 29" d="M1.85,1.241a7.068,7.068,0,0,1,2.088,5.2,2.744,2.744,0,0,1,3.636.217C7.28,3.145,3.995.332,0,0A7.485,7.485,0,0,1,1.85,1.241Z" transform="translate(7.625 0.013)" fill="#388caf"/>
+              <path id="Trazado_30" data-name="Trazado 30" d="M7.888,6.507a7.118,7.118,0,0,0-1.9-5.077A6.423,6.423,0,0,0,3.944,0,6.287,6.287,0,0,0,1.9,1.43,7.168,7.168,0,0,0,0,6.643a3.091,3.091,0,0,1,3.838-.136c-.01.327-.025.095,0,0s.081-.086,0,0A3.531,3.531,0,0,1,7.888,6.507Z" transform="translate(3.681 0)" fill="#d9eff7"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

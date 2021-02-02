@@ -3,6 +3,7 @@ import { jsx } from "theme-ui";
 
 import NextEffects from "./next-effects";
 import CityPlans from "./city-plans";
+import LeftCards from "./left-cards";
 import ConstructionCards from "./contruction-cards";
 import Actions from "./actions";
 
@@ -33,41 +34,43 @@ const App = ({ cards, cityPlanCards, doors, effects }) => {
   return (
     <div
       sx={{
+        justifyContent: "center",
+        height: "fill-content",
         width: "100%",
         display: "grid",
         position: "fixed",
         gridTemplateColumns: ["100%", "30% 50px auto", "30% 50px auto"],
         gridTemplateRows: [
-          "50px 20% 10% 5% auto",
-          "100px 100px 5% auto",
-          "100px 100px 5% auto",
+          "50px 5% 20% 10% auto",
+          "100px 5% 100px auto",
+          "100px 5% 100px auto",
         ],
-        //backgroundColor: ["red", "green", "blue", "yellow", "brown", "black"],
         gridTemplateAreas: [
           `
             'nav'
+            'actions'
             'city-plans'
             'next-effects'
-            'actions'
             'construction-cards'
           `,
           `
           'nav nav nav'
+          'actions actions actions'
           'city-plans next-effects next-effects'
-          'city-plans actions actions'
           'city-plans construction-cards construction-cards'
           `,
           `
           'nav nav nav'
+          'actions actions actions'
           'city-plans next-effects next-effects'
-          'city-plans actions actions'
           'city-plans construction-cards construction-cards'
         `,
         ],
       }}
     >
       <Nav />
-      <CityPlans cityPlanCards={cityPlanCards}></CityPlans>
+      {true && <LeftCards cityPlanCards={cityPlanCards}></LeftCards>}
+      {false && <CityPlans cityPlanCards={cityPlanCards}></CityPlans>}
       <NextEffects effects={effects}></NextEffects>
       <Actions></Actions>
       <ConstructionCards

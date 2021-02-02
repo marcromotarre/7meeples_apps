@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="113" height="56" viewBox="0 0 113 56">
+  <g id="temp_left_9" transform="translate(-2058 -3593)">
+    <g id="Grupo_442" data-name="Grupo 442" transform="translate(1016 2773)">
+      <g id="Rectángulo_82" data-name="Rectángulo 82" transform="translate(1042 820)" fill="none" stroke="#f2986e" stroke-width="1">
+        <rect width="113" height="56" rx="5" stroke="none"/>
+        <rect x="0.5" y="0.5" width="112" height="55" rx="4.5" fill="none"/>
+      </g>
+      <g id="Grupo_443" data-name="Grupo 443" transform="translate(1.543 2)">
+        <g id="Grupo_74" data-name="Grupo 74" transform="translate(1048.457 826)">
+          <path id="Trazado_8" data-name="Trazado 8" d="M318.744-386.97l-20.4-20.719,20.4-19.97,21.246,20.767Z" transform="translate(-298.339 427.659)" fill="#f2986e"/>
+          <path id="Trazado_9" data-name="Trazado 9" d="M-1.078,0H2.166L-2.461,25.32H-5.7Z" transform="translate(12.968 10.267)" fill="#ec7130"/>
+          <path id="Trazado_10" data-name="Trazado 10" d="M-2.463,0H-5.7l4.624,25.32H2.162Z" transform="translate(32.193 10.267)" fill="#ec7130"/>
+          <rect id="Rectángulo_16" data-name="Rectángulo 16" width="30.825" height="4.186" transform="translate(5.199 20.801)" fill="#fac66a"/>
+          <path id="Trazado_11" data-name="Trazado 11" d="M305.5-397.485h3.091l2.615-4.177H305.5Z" transform="translate(-300.304 422.472)" fill="#ec7130"/>
+          <path id="Trazado_12" data-name="Trazado 12" d="M336.242-397.293h5.284v-4.177h-3.084Z" transform="translate(-305.503 422.28)" fill="#eb7132"/>
+          <path id="Trazado_14" data-name="Trazado 14" d="M314.36-397.311h3.913l2.456-4.177h-3.982Z" transform="translate(-292.446 422.298)" fill="#ec7130"/>
+          <path id="Trazado_19" data-name="Trazado 19" d="M314.36-397.311h3.913l2.456-4.177h-3.982Z" transform="translate(-301.367 422.298)" fill="#ec7130"/>
+          <g id="Grupo_10" data-name="Grupo 10" transform="translate(5.199 13.19)">
+            <rect id="Rectángulo_17" data-name="Rectángulo 17" width="30.825" height="4.186" transform="translate(0 0)" fill="#fac66a"/>
+            <path id="Trazado_20" data-name="Trazado 20" d="M305.5-397.485h3.091l2.615-4.177H305.5Z" transform="translate(-305.503 401.671)" fill="#ec7130"/>
+            <path id="Trazado_21" data-name="Trazado 21" d="M336.242-397.293h5.284v-4.177h-3.084Z" transform="translate(-310.701 401.479)" fill="#eb7132"/>
+            <path id="Trazado_22" data-name="Trazado 22" d="M314.36-397.311h3.913l2.456-4.177h-3.982Z" transform="translate(-297.645 401.497)" fill="#ec7130"/>
+            <path id="Trazado_23" data-name="Trazado 23" d="M314.36-397.311h3.913l2.456-4.177h-3.982Z" transform="translate(-306.566 401.497)" fill="#ec7130"/>
+          </g>
+        </g>
+        <text id="_9" data-name="9" transform="translate(1146 859)" fill="#f2986e" font-size="35" font-family="Quicksand" font-weight="700"><tspan x="-19.18" y="0">9</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
