@@ -20,7 +20,7 @@ import door_left_15 from "../../assets/svg/welcome-to/your-perfect-home/left/doo
 import effect_left_2 from "../../assets/svg/welcome-to/your-perfect-home/left/bis_left_5.svg";
 import effect_left_3 from "../../assets/svg/welcome-to/your-perfect-home/left/pool_left_4.svg";
 import effect_left_4 from "../../assets/svg/welcome-to/your-perfect-home/left/temp_left_0.svg";
-import effect_left_1 from "../../assets/svg/welcome-to/your-perfect-home/left/surveyor_2.svg";
+import effect_left_1 from "../../assets/svg/welcome-to/your-perfect-home/left/surveyor_left_2.svg";
 import effect_left_5 from "../../assets/svg/welcome-to/your-perfect-home/left/real-state-agent_left_18.svg";
 import effect_left_6 from "../../assets/svg/welcome-to/your-perfect-home/left/landscaper_left_15.svg";
 
