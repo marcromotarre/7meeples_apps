@@ -45,7 +45,7 @@ const ConstructionCards = ({ cards, effects, doors }) => {
     );
     setActualEffectCards(actualEffectCards);
   }, [deck]);
-  const canGoNext = deck[0].length > 0;
+  const canGoNext = deck[0] ? deck[0].length > 0 : false;
   const discardDeck = useSelector((state) => state.discardDeck);
   const previousMovementsDone = useSelector(
     (state) => state.previousMovementsDone

@@ -3,15 +3,20 @@ import { jsx } from "theme-ui";
 import { useSelector, useDispatch } from "react-redux";
 import goPrevious from "../../assets/svg/welcome-to/go-previous.svg";
 import goNext from "../../assets/svg/welcome-to/go-next.svg";
+import showCityPlansIcon from "../../assets/svg/welcome-to/show-city-plans.svg";
+import showLeftCardsIcon from "../../assets/svg/welcome-to/show-left-cards.svg";
 import {
   goPrevious as goPreviousAction,
   nextTurn as goNextAction,
+  changeShowLeftCards as changeShowLeftCardsAction,
 } from "../../actions";
 const Actions = () => {
   const discardDeck = useSelector((state) => state.discardDeck);
   const dispatch = useDispatch();
-  const canGoPrevious = discardDeck[0].length > 0;
+
+  const canGoPrevious = discardDeck[0] ? discardDeck[0].length > 0 : false;
   const canGoNext = useSelector((state) => state.previousMovementsDone);
+  const showLeftCards = useSelector((state) => state.showLeftCards);
   const handleGoPrevious = () => {
     if (canGoPrevious) {
       dispatch(goPreviousAction());
@@ -22,6 +27,11 @@ const Actions = () => {
       dispatch(goNextAction());
     }
   };
+
+  const handleChangeTopView = () => {
+    dispatch(changeShowLeftCardsAction());
+  };
+
   return (
     <div
       sx={{
@@ -30,7 +40,7 @@ const Actions = () => {
         gridTemplateColumns: "5px 60px auto 60px 5px",
         gridTemplateRows: "100%",
         gridTemplateAreas: `
-            '. information movements left .'
+            '. information movements change-top-view .'
           `,
       }}
     >
@@ -84,7 +94,7 @@ const Actions = () => {
       </div>
       <div
         sx={{
-          gridArea: "left",
+          gridArea: "change-top-view",
           width: "100%",
           height: "100%",
           display: "flex",
@@ -93,13 +103,12 @@ const Actions = () => {
         }}
       >
         <img
-          onClick={handleGoPrevious}
+          onClick={handleChangeTopView}
           sx={{
             maxHeight: "100%",
             maxWidth: "80%",
-            opacity: canGoPrevious ? "1" : "0.3",
           }}
-          src={goPrevious}
+          src={showLeftCards ? showCityPlansIcon : showLeftCardsIcon}
         />
       </div>
     </div>

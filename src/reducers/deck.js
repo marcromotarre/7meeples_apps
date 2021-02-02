@@ -24,11 +24,12 @@ function deckReducer(
     previousMovementsDone: 0,
     cityPlans: [],
     askReset: false,
+    showLeftCards: false,
   },
-  { type, payload },
+  { type, payload }
 ) {
   switch (type) {
-    case 'SET_CITY_PLANS':
+    case "SET_CITY_PLANS":
       return {
         ...state,
         cityPlans: payload.cityPlans.map((cityPlan) => ({
@@ -37,16 +38,17 @@ function deckReducer(
         })),
       };
 
-    case 'CHANGE_CITY_PLAN_STATE':
-      const cityPlan = state.cityPlans.find(
-        (cp) => cp.level === payload.level,
-      );
+    case "CHANGE_SHOW_LEFT_CARDS":
+      return {
+        ...state,
+        showLeftCards: !state.showLeftCards,
+      };
+    case "CHANGE_CITY_PLAN_STATE":
+      const cityPlan = state.cityPlans.find((cp) => cp.level === payload.level);
       return {
         ...state,
         cityPlans: [
-          ...state.cityPlans.filter(
-            (cp) => cp.level !== payload.level,
-          ),
+          ...state.cityPlans.filter((cp) => cp.level !== payload.level),
           {
             ...cityPlan,
             active: !cityPlan.active,
@@ -54,44 +56,44 @@ function deckReducer(
         ],
       };
 
-    case 'EXECUTE_CITY_PLANS_FOR_FIRST_TIME':
+    case "EXECUTE_CITY_PLANS_FOR_FIRST_TIME":
       return {
         ...state,
         askReset: true,
       };
 
-    case 'CANCEL_RESET':
+    case "CANCEL_RESET":
       return {
         ...state,
         askReset: false,
       };
 
-    case 'RESET_DECK':
+    case "RESET_DECK":
       return {
         ...state,
         deck: payload.cards,
         discardDeck: payload.cards.map(() => []),
       };
 
-    case 'RESHUFFLE_DECK':
+    case "RESHUFFLE_DECK":
       return {
         ...state,
         deck: payload.cards,
       };
 
-    case 'ADD_EMPTY_CARD_TO_DISCARD_DECK':
+    case "ADD_EMPTY_CARD_TO_DISCARD_DECK":
       return {
         ...state,
         discardDeck: state.discardDeck.map((subDeck, index) => [
           {
             number: payload.numbers[index],
-            effect: '',
+            effect: "",
           },
           ...state.discardDeck[index],
         ]),
       };
 
-    case 'GO_PREVIOUS':
+    case "GO_PREVIOUS":
       return {
         ...state,
         previousMovementsDone: state.previousMovementsDone + 1,
@@ -100,11 +102,11 @@ function deckReducer(
           ...state.deck[index],
         ]),
         discardDeck: state.discardDeck.map((subDeck) =>
-          subDeck.filter((cards, index) => index > 0),
+          subDeck.filter((cards, index) => index > 0)
         ),
       };
 
-    case 'NEXT_TURN':
+    case "NEXT_TURN":
       return {
         ...state,
         discardDeck: state.deck.map((subDeck, index) => [
@@ -112,15 +114,13 @@ function deckReducer(
           ...state.discardDeck[index],
         ]),
         deck: state.deck.map((subDeck) =>
-          subDeck.filter((cards, index) => index > 0),
+          subDeck.filter((cards, index) => index > 0)
         ),
         previousMovementsDone:
-          state.previousMovementsDone > 0
-            ? state.previousMovementsDone - 1
-            : 0,
+          state.previousMovementsDone > 0 ? state.previousMovementsDone - 1 : 0,
       };
 
-    case 'GO_END':
+    case "GO_END":
       return {
         ...state,
         discardDeck: state.deck.map((subDeck, index) => [
@@ -129,8 +129,8 @@ function deckReducer(
         ]),
         deck: state.deck.map((subDeck) =>
           subDeck.filter(
-            (cards, index) => index > state.previousMovementsDone - 1,
-          ),
+            (cards, index) => index > state.previousMovementsDone - 1
+          )
         ),
         previousMovementsDone: 0,
       };

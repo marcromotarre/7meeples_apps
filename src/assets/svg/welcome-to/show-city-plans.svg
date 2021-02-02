@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="52" height="53" viewBox="0 0 52 53">
+  <g id="show-city-plans" transform="translate(-2874 -1195)">
+    <g id="Rectángulo_212" data-name="Rectángulo 212" transform="translate(2874 1195)" fill="#fff" stroke="#000" stroke-width="1">
+      <rect width="52" height="53" rx="10" stroke="none"/>
+      <rect x="0.5" y="0.5" width="51" height="52" rx="9.5" fill="none"/>
+    </g>
+    <g id="M_1_0_T" transform="translate(2793.313 966)">
+      <g id="Grupo_109" data-name="Grupo 109" transform="translate(88.687 233)">
+        <g id="Rectángulo_4" data-name="Rectángulo 4" transform="translate(0)" fill="#fff" stroke="#000" stroke-width="1">
+          <rect width="36.687" height="36.687" rx="6" stroke="none"/>
+          <rect x="0.5" y="0.5" width="35.687" height="35.687" rx="5.5" fill="none"/>
+        </g>
+      </g>
+      <g id="Grupo_259" data-name="Grupo 259" transform="translate(92.99 262.342)">
+        <path id="Trazado_93" data-name="Trazado 93" d="M11.415,8.072,8.079,11.415H3.35L0,8.072V3.343L3.35,0H8.079l3.337,3.343Z" transform="translate(4.276 0) rotate(22)" fill="#fff" stroke="#000" stroke-width="1"/>
+        <text id="_8" data-name="8" transform="translate(6.697 10.01)" fill="#fff" font-size="8" font-family="Quicksand" font-weight="700"><tspan x="-2.352" y="0">8</tspan></text>
+        <path id="Trazado_95" data-name="Trazado 95" d="M11.415,8.072,8.079,11.415H3.35L0,8.072V3.343L3.35,0H8.079l3.337,3.343Z" transform="translate(19.58 0) rotate(22)" fill="#fff" stroke="#020202" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

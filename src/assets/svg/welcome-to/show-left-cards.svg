@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="52" height="53" viewBox="0 0 52 53">
+  <g id="show-left-cards" transform="translate(-2874 -1195)">
+    <g id="Rectángulo_212" data-name="Rectángulo 212" transform="translate(2874 1195)" fill="#fff" stroke="#000" stroke-width="1">
+      <rect width="52" height="53" rx="10" stroke="none"/>
+      <rect x="0.5" y="0.5" width="51" height="52" rx="9.5" fill="none"/>
+    </g>
+    <g id="Grupo_629" data-name="Grupo 629">
+      <g id="Rectángulo_213" data-name="Rectángulo 213" transform="translate(2887 1203)" fill="#fff" stroke="#000" stroke-width="1">
+        <rect width="21" height="34" rx="3" stroke="none"/>
+        <rect x="0.5" y="0.5" width="20" height="33" rx="2.5" fill="none"/>
+      </g>
+      <g id="Rectángulo_214" data-name="Rectángulo 214" transform="translate(2892 1207)" fill="#fff" stroke="#000" stroke-width="1">
+        <rect width="21" height="34" rx="3" stroke="none"/>
+        <rect x="0.5" y="0.5" width="20" height="33" rx="2.5" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

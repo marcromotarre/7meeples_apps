@@ -2,10 +2,7 @@
 import { jsx } from "theme-ui";
 import { useSelector, useDispatch } from "react-redux";
 
-import {
-  setCityPlans as setCityPlansAction,
-  changeCityPlanState as changeCityPlanStateAction,
-} from "../../actions";
+import { changeCityPlanState as changeCityPlanStateAction } from "../../actions";
 import { useEffect } from "react";
 
 const CityPlans = ({ cityPlanCards }) => {
@@ -15,27 +12,6 @@ const CityPlans = ({ cityPlanCards }) => {
     justifySelf: "center",
     alignSelf: "center",
   };
-
-  useEffect(() => {
-    const cityPlans = [
-      cityPlanCards
-        .filter((cityPlan) => cityPlan.level === 1)
-        .map((a) => [Math.random(), a])
-        .sort((a, b) => a[0] - b[0])
-        .map((a) => a[1])[0],
-      cityPlanCards
-        .filter((cityPlan) => cityPlan.level === 2)
-        .map((a) => [Math.random(), a])
-        .sort((a, b) => a[0] - b[0])
-        .map((a) => a[1])[0],
-      cityPlanCards
-        .filter((cityPlan) => cityPlan.level === 3)
-        .map((a) => [Math.random(), a])
-        .sort((a, b) => a[0] - b[0])
-        .map((a) => a[1])[0],
-    ];
-    dispatch(setCityPlansAction({ cityPlans }));
-  }, []);
 
   const cityPlans = useSelector((state) => state.cityPlans);
   const dispatch = useDispatch();
