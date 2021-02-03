@@ -18,6 +18,7 @@ const LeftCards = ({}) => {
     margin: "2px 0px",
   };
   const deck = useSelector((state) => state.deck);
+  const discardDeck = useSelector((state) => state.discardDeck);
   return (
     <div
       className="city-plans"
@@ -35,7 +36,7 @@ const LeftCards = ({}) => {
         justifySelf: "center",
       }}
     >
-      {getLeftIcons(deck).map((image, index) => (
+      {getLeftIcons({ deck, discardDeck }).map((image, index) => (
         <img
           key={`left-${index}`}
           sx={{ ...leftSyles, gridArea: `left-${index}` }}
