@@ -4,6 +4,7 @@ import { jsx } from "theme-ui";
 import NextEffects from "./next-effects";
 import CityPlans from "./city-plans";
 import LeftCards from "./left-cards";
+import LeftCardsTablet from "./left-cards";
 import ConstructionCards from "./contruction-cards";
 import Actions from "./actions";
 
@@ -64,14 +65,20 @@ const App = ({ cards, cityPlanCards, doors, effects }) => {
         position: "fixed",
         gridTemplateColumns: [
           "100%",
-          "30% 50px calc(70% - 50px)",
-          "30% 50px calc(70% - 50px)",
+          "25% 50px calc(70% - 150px) 100px",
+          "25% 50px calc(70% - 150px) 100px",
         ],
         gridTemplateRows: [
-          "50px  20% 10% 30px auto",
+          "50px 20% 10% 30px auto",
           "100px 100px 5% auto",
           "100px 100px 5% auto",
         ],
+        /*
+ 'nav nav nav'
+            'city-plans next-effects next-effects left-cards-tablet'
+            'city-plans actions actions left-cards-tablet'
+            'city-plans construction-cards construction-cards left-cards-tablet'
+        */
         gridTemplateAreas: [
           `
             'nav'
@@ -81,10 +88,10 @@ const App = ({ cards, cityPlanCards, doors, effects }) => {
             'construction-cards'
           `,
           `
-            'nav nav nav'
-            'city-plans next-effects next-effects'
-            'city-plans actions actions'
-            'city-plans construction-cards construction-cards'
+            'nav nav nav nav'
+            'city-plans next-effects next-effects left-cards-tablet'
+            'city-plans actions actions left-cards-tablet'
+            'city-plans construction-cards construction-cards left-cards-tablet'
           `,
           `
           'nav nav nav'
@@ -105,6 +112,7 @@ const App = ({ cards, cityPlanCards, doors, effects }) => {
         effects={effects}
         doors={doors}
       ></ConstructionCards>
+      <LeftCardsTablet name={"left-cards-tablet"}></LeftCardsTablet>
     </div>
   );
 };

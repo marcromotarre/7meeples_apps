@@ -442,6 +442,9 @@ export const getLeftIcons = ({ deck, discardDeck }) => {
 };
 
 const getLeftCardNumber = ({ deck, discardDeck, key, value }) => {
+  if (!deck[0]) {
+    return;
+  }
   let leftCards = 0;
   if (key === "effect") {
     const lastEffects = [];

@@ -10,9 +10,9 @@ const getLeftCardNumber = (key, value) => {
   deck[0].concat(deck[1], deck[2]).filter((card) => card[key] === value).length;
 };
 
-const LeftCards = ({}) => {
+const LeftCards = ({ name = "city-plans" }) => {
   const leftSyles = {
-    width: "90%",
+    width: ["90%", "60%"],
     alignSelf: "center",
     justifySelf: "center",
     margin: "2px 0px",
@@ -23,16 +23,14 @@ const LeftCards = ({}) => {
     <div
       className="city-plans"
       sx={{
-        gridArea: "city-plans",
+        gridArea: name,
         display: "grid",
-        gridTemplateColumns: [
-          "14.2% 14.2% 14.2% 14.2% 14.2% 14.2%",
-          "33% 33% 33%",
-        ],
+        gridTemplateColumns: ["14.2% 14.2% 14.2% 14.2% 14.2% 14.2%", "100%"],
         gridTemplateRows: [
           "33% 33% 33%",
-          "14.2% 14.2% 14.2% 14.2% 14.2% 14.2%",
+          "4.75% 4.75% 4.75% 4.75% 4.75% 4.75% 4.75% 4.75% 4.75% 4.75% 4.75% 4.75% 4.75% 4.75% 4.75% 4.75% 4.75% 4.75% 4.75% 4.75%",
         ],
+        height: "100%",
         gridTemplateAreas: [
           `
             'left-0 left-3 left-6 left-9 left-12 left-15 left-18'
@@ -40,13 +38,27 @@ const LeftCards = ({}) => {
             'left-2 left-5 left-8 left-11 left-14 left-17 left-20'
           `,
           `
-            'left-0 left-1 left-2'
-            'left-3 left-4 left-5'
-            'left-6 left-7 left-8'
-            'left-9 left-10 left-11'
-            'left-12 left-13 left-14'
-            'left-15 left-16 left-17'
-            'left-18 left-19 left-20'
+            'left-0'
+            'left-1'
+            'left-2'
+            'left-3'
+            'left-4'
+            'left-5'
+            'left-6'
+            'left-7'
+            'left-8'
+            'left-9'
+            'left-10'
+            'left-11'
+            'left-12'
+            'left-13'
+            'left-14'
+            'left-15'
+            'left-16'
+            'left-17'
+            'left-18'
+            'left-19'
+            'left-20'
           `,
         ],
         alignSelf: "center",
