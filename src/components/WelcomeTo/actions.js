@@ -53,17 +53,7 @@ const Actions = () => {
           alignItems: "center",
           justifyContent: "center",
         }}
-      >
-        <img
-          onClick={handleGoPrevious}
-          sx={{
-            maxHeight: "100%",
-            maxWidth: "80%",
-            opacity: canGoPrevious ? "1" : "0.3",
-          }}
-          src={goPrevious}
-        />
-      </div>
+      ></div>
       <div
         sx={{
           gridArea: "movements",
@@ -107,6 +97,7 @@ const Actions = () => {
           sx={{
             maxHeight: "100%",
             maxWidth: "80%",
+            opacity: ["1", "0"],
           }}
           src={showLeftCards ? showCityPlansIcon : showLeftCardsIcon}
         />

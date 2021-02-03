@@ -62,11 +62,15 @@ const App = ({ cards, cityPlanCards, doors, effects }) => {
         width: "100%",
         display: "grid",
         position: "fixed",
-        gridTemplateColumns: ["100%", "30% 50px auto", "30% 50px auto"],
+        gridTemplateColumns: [
+          "100%",
+          "30% 50px calc(70% - 50px)",
+          "30% 50px calc(70% - 50px)",
+        ],
         gridTemplateRows: [
           "50px  20% 10% 30px auto",
-          "100px 5% 100px auto",
-          "100px 5% 100px auto",
+          "100px 100px 5% auto",
+          "100px 100px 5% auto",
         ],
         gridTemplateAreas: [
           `
@@ -77,10 +81,10 @@ const App = ({ cards, cityPlanCards, doors, effects }) => {
             'construction-cards'
           `,
           `
-          'nav nav nav'
-          'actions actions actions'
-          'city-plans next-effects next-effects'
-          'city-plans construction-cards construction-cards'
+            'nav nav nav'
+            'city-plans next-effects next-effects'
+            'city-plans actions actions'
+            'city-plans construction-cards construction-cards'
           `,
           `
           'nav nav nav'

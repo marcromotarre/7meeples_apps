@@ -25,13 +25,30 @@ const LeftCards = ({}) => {
       sx={{
         gridArea: "city-plans",
         display: "grid",
-        gridTemplateColumns: "14.2% 14.2% 14.2% 14.2% 14.2% 14.2%",
-        gridTemplateRows: "33% 33% 33%",
-        gridTemplateAreas: `
+        gridTemplateColumns: [
+          "14.2% 14.2% 14.2% 14.2% 14.2% 14.2%",
+          "33% 33% 33%",
+        ],
+        gridTemplateRows: [
+          "33% 33% 33%",
+          "14.2% 14.2% 14.2% 14.2% 14.2% 14.2%",
+        ],
+        gridTemplateAreas: [
+          `
             'left-0 left-3 left-6 left-9 left-12 left-15 left-18'
             'left-1 left-4 left-7 left-10 left-13 left-16 left-19'
             'left-2 left-5 left-8 left-11 left-14 left-17 left-20'
           `,
+          `
+            'left-0 left-1 left-2'
+            'left-3 left-4 left-5'
+            'left-6 left-7 left-8'
+            'left-9 left-10 left-11'
+            'left-12 left-13 left-14'
+            'left-15 left-16 left-17'
+            'left-18 left-19 left-20'
+          `,
+        ],
         alignSelf: "center",
         justifySelf: "center",
       }}
