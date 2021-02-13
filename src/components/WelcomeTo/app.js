@@ -15,7 +15,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { resetDeck, setCityPlans as setCityPlansAction } from "../../actions";
 import { useEffect } from "react";
 
-const App = ({ cards, cityPlanCards, doors, effects }) => {
+const App = ({ cards, cityPlanCards, doors, effects, hasLeftCardsData }) => {
   const dispatch = useDispatch();
   const showLeftCards = useSelector((state) => state.showLeftCards);
 
@@ -69,16 +69,10 @@ const App = ({ cards, cityPlanCards, doors, effects }) => {
           "25% 50px calc(70% - 150px) 100px",
         ],
         gridTemplateRows: [
-          "50px 20% 10% 30px auto",
+          "50px 20% 10% 30px calc(70% - 80px)",
           "100px 100px 5% auto",
           "100px 100px 5% auto",
         ],
-        /*
- 'nav nav nav'
-            'city-plans next-effects next-effects left-cards-tablet'
-            'city-plans actions actions left-cards-tablet'
-            'city-plans construction-cards construction-cards left-cards-tablet'
-        */
         gridTemplateAreas: [
           `
             'nav'
@@ -89,9 +83,15 @@ const App = ({ cards, cityPlanCards, doors, effects }) => {
           `,
           `
             'nav nav nav nav'
-            'city-plans next-effects next-effects left-cards-tablet'
-            'city-plans actions actions left-cards-tablet'
-            'city-plans construction-cards construction-cards left-cards-tablet'
+            'city-plans next-effects next-effects ${
+              hasLeftCardsData ? "left-cards-tablet" : "next-effects"
+            }'
+            'city-plans actions actions ${
+              hasLeftCardsData ? "left-cards-tablet" : "actions"
+            }'
+            'city-plans construction-cards construction-cards ${
+              hasLeftCardsData ? "left-cards-tablet" : "construction-cards"
+            }'
           `,
           `
           'nav nav nav'
@@ -106,13 +106,15 @@ const App = ({ cards, cityPlanCards, doors, effects }) => {
       {!showLeftCards && <CityPlans cityPlanCards={cityPlanCards}></CityPlans>}
       {showLeftCards && <LeftCards></LeftCards>}
       <NextEffects effects={effects}></NextEffects>
-      <Actions></Actions>
+      <Actions hasLeftCardsData={hasLeftCardsData}></Actions>
       <ConstructionCards
         cards={cards}
         effects={effects}
         doors={doors}
       ></ConstructionCards>
-      <LeftCardsTablet name={"left-cards-tablet"}></LeftCardsTablet>
+      {hasLeftCardsData && (
+        <LeftCardsTablet name={"left-cards-tablet"}></LeftCardsTablet>
+      )}
     </div>
   );
 };

@@ -14,6 +14,7 @@ export default () => {
       cityPlanCards={cityPlanCards}
       doors={doors}
       effects={effects}
+      hasLeftCardsData={true}
     />
   );
 };

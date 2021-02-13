@@ -10,7 +10,7 @@ import {
   nextTurn as goNextAction,
   changeShowLeftCards as changeShowLeftCardsAction,
 } from "../../actions";
-const Actions = () => {
+const Actions = ({ hasLeftCardsData }) => {
   const discardDeck = useSelector((state) => state.discardDeck);
   const dispatch = useDispatch();
 
@@ -92,15 +92,17 @@ const Actions = () => {
           justifyContent: "center",
         }}
       >
-        <img
-          onClick={handleChangeTopView}
-          sx={{
-            maxHeight: "100%",
-            maxWidth: "80%",
-            opacity: ["1", "0"],
-          }}
-          src={showLeftCards ? showCityPlansIcon : showLeftCardsIcon}
-        />
+        {hasLeftCardsData && (
+          <img
+            onClick={handleChangeTopView}
+            sx={{
+              maxHeight: "100%",
+              maxWidth: "80%",
+              opacity: ["1", "0"],
+            }}
+            src={showLeftCards ? showCityPlansIcon : showLeftCardsIcon}
+          />
+        )}
       </div>
     </div>
   );
