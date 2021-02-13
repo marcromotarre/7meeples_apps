@@ -93,12 +93,6 @@ const App = ({ cards, cityPlanCards, doors, effects, hasLeftCardsData }) => {
               hasLeftCardsData ? "left-cards-tablet" : "construction-cards"
             }'
           `,
-          `
-          'nav nav nav'
-          'actions actions actions'
-          'city-plans next-effects next-effects'
-          'city-plans construction-cards construction-cards'
-        `,
         ],
       }}
     >
