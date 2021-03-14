@@ -17,18 +17,19 @@ const deckSlice = createSlice({
   export default deckSlice;
   */
 
-function deckReducer(
-  state = {
-    deck: [],
-    discardDeck: [],
-    previousMovementsDone: 0,
-    cityPlans: [],
-    askReset: false,
-    showLeftCards: false,
-  },
-  { type, payload }
-) {
+const initialState = {
+  deck: [],
+  discardDeck: [],
+  previousMovementsDone: 0,
+  cityPlans: [],
+  askReset: false,
+  showLeftCards: false,
+};
+
+function deckReducer(state = initialState, { type, payload }) {
   switch (type) {
+    case "CLEAN":
+      return { ...initialState };
     case "SET_CITY_PLANS":
       return {
         ...state,

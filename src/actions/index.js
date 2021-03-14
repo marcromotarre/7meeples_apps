@@ -1,3 +1,7 @@
+export const clean = () => ({
+  type: "CLEAN",
+});
+
 export const resetDeck = ({ cards }) => ({
   type: "RESET_DECK",
   payload: {
