@@ -11,6 +11,7 @@ export default () => {
     borderRadius: "10px",
     width: "60%",
     height: "auto",
+    maxHeight: "90%",
     objectFit: "contain",
     margin: "10px 0px",
   };
@@ -43,12 +44,15 @@ export default () => {
 
       <div
         sx={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "start",
+          display: "grid",
+          justifyItems: "center",
+          gridTemplateColumns: "100%",
+          gridTemplateRows: "50% 50%",
           alignItems: "center",
           width: "100%",
+          height: "calc(100% - 150px)",
           gridArea: "games",
+          rowGap: "10px",
         }}
       >
         <Link href="./welcometoyourperfecthome">
